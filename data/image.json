@@ -1,0 +1,10 @@
+{
+    "version" : "1.0.0",
+    "about_info" : ["大葉大學資工系一年級", "大學入門專題製作", "公車即時動態應用程式", "cocoNUTTree © 2022"],
+    "content" : [
+        {"image" : "https://i.imgur.com/2TPWtXw.png", "link" : "https://cnutt.me/app", "title" : "公車即時動態APP介紹"},
+        {"image" : "https://i.imgur.com/DQsfr71.png", "link" : "https://cnutt.me/app/sdgs", "title" : "SDGS理念"},
+        {"image" : "https://i.imgur.com/PzgNDd5.jpg", "link" : "https://cnutt.me/app/teacher", "title" : "指導老師-張顧耀"},
+        {"image" : "https://i.imgur.com/CkXfukI.jpg", "link" : "https://cnutt.me/app/teacher", "title" : "超人"}
+    ]
+}
