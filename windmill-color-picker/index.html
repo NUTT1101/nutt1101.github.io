@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title></title>
+
+    <meta name="description" content="使用者可透過不同模式的配色設定，調整風車葉片的顏色，並藉由視覺暫留的原理達成顏色混和的效果。">
+    <meta property="og:title" content="Windmill-Color-Mixer" />
+    <meta property="og:image" content="https://cnutt.me/windmill-color-mixer/image/perview-pc.png" />
+    <meta property="og:description" content="使用者可透過不同模式的配色設定，調整風車葉片的顏色，並藉由視覺暫留的原理達成顏色混和的效果。" />
+
+    <link rel="icon" type="image/x-icon" href="./image/header/favicon.ico">
+
+    <!--custom-->
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/shiyuzhi/style.css">
+
+    <!--windmill-->
+    <link rel="stylesheet" href="./style/windmill.css">
+
+    <!--boostrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+
+    <!--fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Klee+One&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&amp;display=swap">
+
+    <!--color picker-->
+    <script defer="true" type="module" src="https://unpkg.com/shop-color-picker"></script>
+    
+    <!--bootstrap-->
+    <script defer="true" src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script defer="true" src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <!--self-->
+    <script defer="true" src="./script/script.js" type="module"></script>
+</head>
+
+<body>
+    <div id="region" class="container">
+        <h1 class="text-center">
+            <img style="position:relative;top: -4.5px;" width="40px" src="./image/header/icon.svg" alt="">
+            <a href="." id="title" class="title fs-1"></a>
+        </h1>
+        
+        <div id="nav-region">
+            <header class="d-flex justify-content-center py-3">
+              <ul class="nav nav-pills">
+                <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">雙色</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">四色</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">八色</a></li>
+              </ul>
+            </header>
+        </div>
+    
+        <div id="display-region" class="wrapper p-3 mb-3 rounded-4 d-flex justify-content-around">
+            <shop-color-picker class="color-picker"></shop-color-picker>
+            <div id="windmill-1" class="windmill"></div>
+        </div>
+
+        <div id="button-region" class="mb-3 text-center">
+            <button type="button" class="s-button" id="scroll-button">轉/停</button>
+            <button type="button" class="s-button" id="result-button" data-toggle="modal" data-target="#info-modal">結 果</button>
+            <button type="button" class="s-button" id="reset-button">重 置</button>
+            <button type="button" class="s-button" id="about-button" data-toggle="modal" data-target="#info-modal">關 於</button>
+        </div>
+        
+        <div id="color-region" class="row"></div>
+
+        <div id="footer" class="text-center mt-4"></div>
+    </div>
+
+    <div class="modal fade" id="color-picker-modal" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">調色盤</h5>
+                </div>
+
+                <div class="modal-body text-center">
+                    <shop-color-picker></shop-color-picker>
+                </div>
+
+                <div class="modal-footer">
+                    <button class="s-button" data-dismiss="modal">關 閉</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="info-modal" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-title"></h5>
+                </div>
+
+                <div class="modal-body">
+                    <div id="content-result"></div>
+                </div>
+
+                <div class="modal-footer">
+                    <button class="s-button" data-dismiss="modal">關 閉</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
