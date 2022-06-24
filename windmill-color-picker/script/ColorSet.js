@@ -1,1 +1,0 @@
-export class ColorSet{constructor(o){this.colors=0==o.length||null==o||null==o?Array.of(ColorProject.themeColor,ColorProject.periwinkle):o}}
