@@ -1,9 +1,0 @@
-{
-    "version" : "1.0.0",
-    "about_info" : ["大葉大學資工系一年級", "大學入門專題製作", "公車即時動態應用程式", "指導老師: 張顧耀", "cocoNUTTree © 2022"],
-    "content" : [
-        {"image" : "https://i.imgur.com/2TPWtXw.png", "link" : "https://www.canva.com/design/DAFA3NmooRI/n0sX_5RWqhJXJIeB4DoMag/view?utm_content=DAFA3NmooRI&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink#1", "title" : "APP介紹"},
-        {"image" : "https://i.imgur.com/DQsfr71.png", "link" : "https://www.canva.com/design/DAFA3NmooRI/n0sX_5RWqhJXJIeB4DoMag/view?utm_content=DAFA3NmooRI&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink#32", "title" : "SDGS理念"},
-        {"image" : "https://i.imgur.com/PzgNDd5.jpg", "link" : "https://www.canva.com/design/DAFA3NmooRI/n0sX_5RWqhJXJIeB4DoMag/view?utm_content=DAFA3NmooRI&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink#2", "title" : "指導老師-張顧耀"}
-    ]
-}
