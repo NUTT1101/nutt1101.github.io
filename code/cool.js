@@ -1,7 +1,5 @@
-var iRadio = 0;
-var iInput = 0;
-var radioDone = false;
-var inputDone = false;
+var iRadio = 0, iInput = 0,
+    radioDone = false, inputDone = false;
 
 function checkComplete() {
     if (radioDone && inputDone) {
@@ -25,15 +23,23 @@ var intervalRadio = setInterval(function() {
     iRadio += 5;
 }, 1);
 
+
+let inputCheck = 0;
 var intervalInput = setInterval(function(){
   let input = document.querySelectorAll('.office-form-textfield input')[iInput];
-  if (!input) {
-      stopInterval(intervalInput, (done) => inputDone = done);
+  
+  if (inputCheck) {
+    inputCheck = 1;
+  }
+  
+  if (!input && inputCheck) {
+        stopInterval(intervalInput, (done) => inputDone = done);
       return;
   }
+  
   input.value = iInput === 0 ? '100' : '0';
   input.dispatchEvent(new Event('input'));
   input.dispatchEvent(new Event('change'));
   document.querySelector('.SkipBtn').click();
   iInput += 1;
-}, 200);
+}, 1);
