@@ -28,7 +28,7 @@ let inputCheck = 0;
 var intervalInput = setInterval(function(){
   let input = document.querySelectorAll('.office-form-textfield input')[iInput];
   
-  if (inputCheck) {
+  if (input) {
     inputCheck = 1;
   }
   
