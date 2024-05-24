@@ -30,11 +30,9 @@ var intervalInput = setInterval(function(){
   
   if (input) {
     inputCheck = 1;
-  }
-  
-  if (!input && inputCheck) {
-        stopInterval(intervalInput, (done) => inputDone = done);
-      return;
+  } else if (inputCheck) { 
+	stopInterval(intervalInput, (done) => inputDone = done);
+    return;
   }
   
   input.value = iInput === 0 ? '100' : '0';
